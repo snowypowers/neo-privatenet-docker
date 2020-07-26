@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "isRoot": true,
+    "tools": {
+      "dnt": {
+        "version": "1.5.1",
+        "commands": [
+          "dnt"
+        ]
+      }
+    }
+  }
