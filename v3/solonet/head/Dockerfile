@@ -5,8 +5,8 @@ WORKDIR /opt/mono
 COPY ./.config/ ./switcher.json ./
 RUN git clone https://github.com/neo-project/neo-vm.git
 RUN git clone -b preview3 https://github.com/neo-project/neo.git
-RUN git clone https://github.com/neo-project/neo-modules.git
-RUN git clone https://github.com/neo-project/neo-node.git
+RUN git clone -b preview3 https://github.com/neo-project/neo-modules.git
+RUN git clone -b preview3 https://github.com/neo-project/neo-node.git
 
 RUN dotnet tool restore
 RUN dotnet new sln

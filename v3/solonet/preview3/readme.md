@@ -1,9 +1,9 @@
 
 # Build
 ```sh
-docker build -t v3-solonet:head .
-docker create --name solonet_head -p 20332-20334:20332-20334 v3-solonet:head
-docker start solonet_head
+docker build -t v3-solonet:preview3 .
+docker create --name solonet_p3 -p 20332-20334:20332-20334 v3-solonet:preview3
+docker start solonet_p3
 ```
 # Operation
 
@@ -27,6 +27,6 @@ gas: 0x668e0c1f9d7b70a99dd9e06eadd4c784d641afbc
 # Debug
 To manually go into the docker container and see what is inside:
 ```
-docker exec -it -p 20332-20334:20332-20334 solonet_head /bin/bash
+docker exec -it solonet_p3 /bin/bash
 screen -r node
 ```

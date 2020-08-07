@@ -1,0 +1,7 @@
+{
+  "solution": "mono.sln",
+  "mappings": {
+    "Neo": "./neo/src/neo/neo.csproj",
+    "Neo.VM": "./neo-vm/src/neo-vm/neo-vm.csproj"
+  }
+}
