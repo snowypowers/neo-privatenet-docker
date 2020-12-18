@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/runtime:3.1 AS Build
+FROM mcr.microsoft.com/dotnet/runtime:3.1 AS Build
 
 RUN apt-get update && apt-get install -y wget unzip
 WORKDIR /opt/neo-cli
@@ -17,7 +17,7 @@ RUN unzip -q -d /opt/neo-cli nep5.zip && rm nep5.zip
 
 
 
-FROM mcr.microsoft.com/dotnet/core/runtime:3.1 AS Assemble
+FROM mcr.microsoft.com/dotnet/runtime:3.1 AS Assemble
 RUN apt-get -y update && apt-get install -y libleveldb-dev sqlite3 libsqlite3-dev libunwind8-dev screen
 WORKDIR /opt/neo-cli
 COPY --from=Build /opt/neo-cli .

@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/runtime:3.0 AS Build
+FROM mcr.microsoft.com/dotnet/core/runtime:3.0 AS build
 
 RUN apt-get install -y wget unzip
 WORKDIR /opt/neo-cli
@@ -12,10 +12,10 @@ RUN unzip -q -d /opt/neo-cli rpcserver.zip && rm rpcserver.zip
 RUN wget -q -O nep5.zip https://github.com/neo-project/neo-modules/releases/download/v3.0.0-preview2-00/RpcNep5Tracker.zip
 RUN unzip -q -d /opt/neo-cli nep5.zip && rm nep5.zip
 
-FROM mcr.microsoft.com/dotnet/core/runtime:3.0 AS Final
+FROM mcr.microsoft.com/dotnet/core/runtime:3.0 AS final
 RUN apt-get -y update && apt-get install -y libleveldb-dev sqlite3 libsqlite3-dev libunwind8-dev screen
 WORKDIR /opt/neo-cli
-COPY --from=Build /opt/neo-cli .
+COPY --from=build /opt/neo-cli .
 COPY ./src/ .
 EXPOSE 20332-20334
 
