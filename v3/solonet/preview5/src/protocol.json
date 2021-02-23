@@ -1,0 +1,14 @@
+{
+    "ProtocolConfiguration": {
+      "Magic": 1234567890,
+      "MillisecondsPerBlock": 1000,
+      "MaxTraceableBlocks": 2102400,
+      "ValidatorsCount": 1,
+      "StandbyCommittee": [
+        "03118a2b7962fa0226fa35acf5d224855b691c7ea978d1afe2c538631d5f7be85e"
+      ],
+      "SeedList": [
+        "localhost:20333"
+      ]
+    }
+  }

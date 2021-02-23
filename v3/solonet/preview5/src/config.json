@@ -1,0 +1,23 @@
+{
+    "ApplicationConfiguration": {
+      "Logger": {
+        "Path": "Logs_{0}",
+        "ConsoleOutput": false,
+        "Active": false
+      },
+      "Storage": {
+        "Engine": "LevelDBStore"
+      },
+      "P2P": {
+        "Port": 20333,
+        "WsPort": 20334
+      },
+      "UnlockWallet": {
+        "Path": "wallet.json",
+        "Password": "wallet",
+        "StartConsensus": true,
+        "IsActive": true
+      },
+      "PluginURL": "https://github.com/neo-project/neo-modules/releases/download/v{1}/{0}.zip"
+    }
+  }
