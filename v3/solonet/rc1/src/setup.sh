@@ -25,22 +25,22 @@ curl -d '
             {
                 "asset":"0xef4073a0f2b305a38ec4050e4d3d28bc40ea63f5",
                 "value":"1000",
-                "address":"NiwvMyWYeNghLG8tDyKkWwuZV3wS8CPrrV"
+                "address":"NYaVsrMV9GS8aaspRS4odXf1WHZdMmJiPC"
             },
             {
                 "asset":"0xef4073a0f2b305a38ec4050e4d3d28bc40ea63f5",
                 "value":"1000",
-                "address":"NTWHAzB82LRGWNuuqjVyyzpGvF3WxbbPoG"
+                "address":"NWcpK2143ZjgzDYyQJhoKrodJUymHTxPzR"
             },
             {
                 "asset":"0xef4073a0f2b305a38ec4050e4d3d28bc40ea63f5",
                 "value":"1000",
-                "address":"NSyfwYL3LUNgjiiXDZBi9SDYh5eoe5DA71"
+                "address":"Ni8Dw2zt7nGidkvwr55vssvG2R7JAEXsBM"
             },
             {
                 "asset":"0xef4073a0f2b305a38ec4050e4d3d28bc40ea63f5",
                 "value":"1000",
-                "address":"NZcX6tJCGQreJbNZXewMC9TcKaa5LRsNJx"
+                "address":"NYvLBq6UtdvQnqLWog2Vtgf6AY4D6M1Kim"
             },
             {
                 "asset":"0xd2a4cff31913016155e38e474a2c06d08be276cf",
@@ -50,27 +50,22 @@ curl -d '
             {
                 "asset":"0xd2a4cff31913016155e38e474a2c06d08be276cf",
                 "value":"100000000000",
-                "address":"NiwvMyWYeNghLG8tDyKkWwuZV3wS8CPrrV"
+                "address":"NYaVsrMV9GS8aaspRS4odXf1WHZdMmJiPC"
             },
             {
                 "asset":"0xd2a4cff31913016155e38e474a2c06d08be276cf",
                 "value":"100000000000",
-                "address":"NTWHAzB82LRGWNuuqjVyyzpGvF3WxbbPoG"
-            },
-            {
-                "asset":"0xd2a4cff31913016155e38e474a2c06d08be276cf",
-                "value":"100000000000",
-                "address":"NSyfwYL3LUNgjiiXDZBi9SDYh5eoe5DA71"
-            },
-            {
-                "asset":"0xd2a4cff31913016155e38e474a2c06d08be276cf",
-                "value":"100000000000",
-                "address":"NZcX6tJCGQreJbNZXewMC9TcKaa5LRsNJx"
+                "address":"NWcpK2143ZjgzDYyQJhoKrodJUymHTxPzR"
             },
             {
                 "asset":"0xd2a4cff31913016155e38e474a2c06d08be276cf",
                 "value":"100000000000",
                 "address":"Ni8Dw2zt7nGidkvwr55vssvG2R7JAEXsBM"
+            },
+            {
+                "asset":"0xd2a4cff31913016155e38e474a2c06d08be276cf",
+                "value":"100000000000",
+                "address":"NYvLBq6UtdvQnqLWog2Vtgf6AY4D6M1Kim"
             }
         ]],"id": 3}' -H 'Content-Type: application/json' http://localhost:20332
 
