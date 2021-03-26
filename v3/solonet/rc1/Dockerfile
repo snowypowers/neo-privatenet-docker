@@ -23,12 +23,12 @@ RUN apt-get -y update && apt-get install -y libleveldb-dev sqlite3 libsqlite3-de
 WORKDIR /opt/neo-cli
 COPY --from=build /opt/neo-cli .
 COPY ./src/ .
-EXPOSE 20332-20334
 
 FROM assemble AS final
 WORKDIR /opt/neo-cli
 # Perform initial wallet setup
 RUN /opt/neo-cli/setup.sh
+EXPOSE 20332-20334
 
 # Run the cli on container startup
 ENTRYPOINT ["screen","-DmS","node","dotnet","neo-cli.dll","-r"]
