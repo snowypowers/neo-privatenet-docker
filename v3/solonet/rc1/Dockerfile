@@ -19,7 +19,7 @@ RUN wget -q -O applogs.zip https://github.com/neo-project/neo-modules/releases/d
 RUN unzip -q -d /opt/neo-cli applogs.zip && rm applogs.zip
 
 FROM mcr.microsoft.com/dotnet/runtime:5.0 AS assemble
-RUN apt-get -y update && apt-get install -y libleveldb-dev sqlite3 libsqlite3-dev libunwind8-dev screen curl
+RUN apt-get -y update && apt-get install -y libleveldb-dev sqlite3 libsqlite3-dev libunwind8-dev screen curl jq
 WORKDIR /opt/neo-cli
 COPY --from=build /opt/neo-cli .
 COPY ./src/ .
