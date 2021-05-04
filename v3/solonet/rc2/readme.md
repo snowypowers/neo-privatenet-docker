@@ -3,7 +3,7 @@
 ```sh
 docker build -t v3-solonet:rc2 .
 docker create --name solonet_rc2 -p 20332-20334:20332-20334 v3-solonet:rc2
-docker start solonet_rc1
+docker start solonet_rc2
 ```
 
 # Operation
@@ -29,6 +29,6 @@ gas: 0xd2a4cff31913016155e38e474a2c06d08be276cf
 # Debug
 To manually go into the docker container and see what is inside:
 ```
-docker exec -it solonet_rc1 /bin/bash
+docker exec -it solonet_rc2 /bin/bash
 screen -r node
 ```
